@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 1 HTML </title>
+</head>
+<body>
+
+    <header>
+        <h1>Exercício HTML - The Beatles</h1>''
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#imagens">Imagens</a></li>
+            <li><a href="#tabelas">Tabelas</a></li>
+            <li><a href="#caminhos">Caminhos</a></li>
+            <li><a href="sobre.html">Sobre (Relativo)</a></li>
+            <li><a href="https://www.thebeatles.com/" target="_blank">Site Oficial (Absoluto)</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Sobre os Beatles</h2>
+            <p>Os Beatles foram uma banda de rock inglesa, formada em Liverpool em 1960, que se tornou uma das mais influentes e bem-sucedidas da história da música.
+                 Composta por John Lennon, Paul McCartney, George Harrison e Ringo Starr, a banda liderou a "Invasão Britânica" nos Estados Unidos e se tornou um fenômeno global.</p>
+        </article>
+
+         <section id="listas">
+            <h2>Listas</h2>
+            <ul>
+                <li>John Lennon</li>
+                <li>Paul McCartney</li>
+                <li>George Harrison</li>
+            </ul>
+            <ol>
+                <li>Passo 1</li>
+                <li>Passo 2</li>
+                <li>Passo 3</li>
+            </ol>
+            <dl>
+                <dt>Termo 1</dt>
+                <dd>Definição do termo 1.</dd>
+                <dt>Termo 2</dt>
+                <dd>Definição do termo 2.</dd>
+            </dl>
+        </section>
+
+        <section id="imagens">
+            <h2>Imagens</h2>
+            <figure>
+                <img src="img/beatles.jpg" alt="Os Beatles em uma foto de estúdio." style="width:200px;">
+                <figcaption>Imagem com caminho relativo.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://www.anfer.com.br/arquivos/produtos/imagens_adicionais/FOTO_cfa3bc6d213242f6efadf4036905bba0.jpg" alt="Os Beatles em preto e branco." style="width:200px;">
+                <figcaption>Imagem com caminho absoluto.</figcaption>
+            </figure>
+        </section>
+
+        <section id="tabelas">
+            <h2>Tabelas</h2>
+            
+            <table border="1" cellpadding="5">
+                <caption>Educação Profissional (2014)</caption>
+                <thead>
+                    <tr><th scope="col">Localidade</th><th scope="col">Matrículas</th><th scope="col">Crescimento</th></tr>
+                </thead>
+                <tbody>
+                    <tr><th scope="row">Brasil</th><td>1.741.528</td><td>11,7%</td></tr>
+                    <tr><th scope="row">SC</th><td>67.325</td><td>3,1%</td></tr>
+                </tbody>
+            </table>
+
+            <br>
+            
+            <table border="1" cellpadding="5">
+                 <caption>Discografia Selecionada</caption>
+                 <thead>
+                    <tr><th scope="col">Álbum</th><th scope="col">Ano</th><th scope="col">Capa</th></tr>
+                 </thead>
+                 <tbody>
+                    <tr>
+                        <td>Abbey Road</td>
+                        <td>1969</td>
+                        <td>
+                            <figure>
+                                <img src="https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg" alt="Capa do Abbey Road." style="width:80px;">
+                                <figcaption>Capa icônica.</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Revolver</td>
+                        <td>1966</td>
+                        <td>
+                            <figure>
+                                <img src="https://upload.wikimedia.org/wikipedia/pt/2/24/Revolver_%C3%A1lbum.jpg" alt="Capa do Revolver." style="width:80px;">
+                                <figcaption>Marco do psicodelismo.</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                 </tbody>
+            </table>
+        </section>
+
+        <section id="caminhos">
+            <h2>Caminhos Relativos vs. Absolutos</h2>
+            <p><b>Caminho Absoluto</b> é uma URL completa (<code>https://site.com/imagem.png</code>),
+                 usada para recursos externos. 
+                 <p>
+                    <b>Caminho Relativo</b> aponta para um arquivo em relação à página atual
+                  (<code>img/foto.jpg</code>), usado para arquivos do mesmo projeto.</p>
+        </section>
+    </main>
+
+    <footer style=" text-align: center;">
+        <p>&copy; 2025 - João Rodrigues
+
+        </p>
+    </footer>
+
+</body>
+</html>
