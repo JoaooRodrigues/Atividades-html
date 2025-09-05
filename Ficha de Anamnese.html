@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Anamnese</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ficha de Anamnese</h1>
+    </header>
+
+    <main>
+        
+            
+            <section>
+                <h2 Dados Pessoais</h2>
+                <p>
+                    <label for="nome_completo">Nome completo</label><br>
+                    <input type="text" id="nome_completo" name="nome_completo" required>
+                </p>
+                <p>
+                    <label for="data_nascimento">Data de nascimento</label><br>
+                    <input type="date" id="data_nascimento" name="data_nascimento" required>
+                </p>
+                <p>
+                    <label for="cpf">CPF</label><br>
+                    <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+                </p>
+                <p>
+                    <label for="telefone">Telefone</label><br>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </p>
+                <p>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email" name="email">
+                </p>
+                <p>
+                    <label for="endereco">Endereço</label><br>
+                    <textarea id="endereco" name="endereco" rows="3" style="width: 250px;"></textarea>
+                </p>
+            </section>
+
+
+                <h2>Histórico de Saúde</h2>
+                <p>
+                    <label for="alergias">Alergias (Se sim, quais ?)</label><br>
+                    <textarea id="alergias" name="alergias" rows="3" style="width: 250px;" required></textarea>
+                </p>
+
+                <fieldset>
+                    <legend>Doenças crônicas</legend>
+                    <input type="checkbox" id="hipertensao" name="doencas" value="hipertensao">
+                    <label for="hipertensao">Hipertensão</label><br>
+                    <input type="checkbox" id="diabetes" name="doencas" value="diabetes">
+                    <label for="diabetes">Diabetes</label><br>
+                    <input type="checkbox" id="asma" name="doencas" value="asma">
+                    <label for="asma">Asma</label><br>
+                    <input type="checkbox" id="outras" name="doencas" value="outras">
+                    <label for="outras">Outras</label>
+                </fieldset>
+                <br>
+
+                <table border="1" cellpadding="5" cellspacing="0" style="width:100%; max-width: 500px;">
+                    <caption>Medicamentos em uso</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Dosagem</th>
+                            <th scope="col">Frequência</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="medicamento_nome_1" aria-label="Nome do medicamento 1" style="width: 95%;"></td>
+                            <td><input type="text" name="medicamento_dosagem_1" aria-label="Dosagem do medicamento 1" style="width: 95%;"></td>
+                            <td><input type="text" name="medicamento_freq_1" aria-label="Frequência do medicamento 1" style="width: 95%;"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="medicamento_nome_2" aria-label="Nome do medicamento 2" style="width: 95%;"></td>
+                            <td><input type="text" name="medicamento_dosagem_2" aria-label="Dosagem do medicamento 2" style="width: 95%;"></td>
+                            <td><input type="text" name="medicamento_freq_2" aria-label="Frequência do medicamento 2" style="width: 95%;"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="medicamento_nome_3" aria-label="Nome do medicamento 3" style="width: 95%;"></td>
+                            <td><input type="text" name="medicamento_dosagem_3" aria-label="Dosagem do medicamento 3" style="width: 95%;"></td>
+                            <td><input type="text" name="medicamento_freq_3" aria-label="Frequência do medicamento 3" style="width: 95%;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                
+                <table border="1" cellpadding="5" cellspacing="0" style="width:100%; max-width: 500px;">
+                    <caption>Cirurgias/Internações anteriores</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Quais</th>
+                            <th scope="col">Quando?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="cirurgia_qual_1" aria-label="Qual cirurgia 1" style="width: 95%;"></td>
+                            <td><input type="text" name="cirurgia_quando_1" aria-label="Quando foi a cirurgia 1" style="width: 95%;"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="cirurgia_qual_2" aria-label="Qual cirurgia 2" style="width: 95%;"></td>
+                            <td><input type="text" name="cirurgia_quando_2" aria-label="Quando foi a cirurgia 2" style="width: 95%;"></td>
+                        </tr>
+                         <tr>
+                            <td><input type="text" name="cirurgia_qual_3" aria-label="Qual cirurgia 3" style="width: 95%;"></td>
+                            <td><input type="text" name="cirurgia_quando_3" aria-label="Quando foi a cirurgia 3" style="width: 95%;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p>
+                    <label for="queixa_principal">Queixa principal</label><br>
+                    <textarea id="queixa_principal" name="queixa_principal" 
+                    rows="4" style="width: 250px;" required></textarea>
+                </p>
+            </section>
+
+            <section>
+                <h2 id="habitos-titulo">Hábitos e Estilo de Vida</h2>
+                <p>
+                    <label for="atividade_fisica">Atividade física</label><br>
+                    <select id="atividade_fisica" name="atividade_fisica">
+                        <option value="nenhuma">Nenhuma</option>
+                        <option value="leve">Leve</option>
+                        <option value="moderada">Moderada</option>
+                        <option value="intensa">Intensa</option>
+                    </select>
+                </p>
+                 <p>
+                    <label for="tabagismo">Tabagismo</label><br>
+                    <select id="tabagismo" name="tabagismo">
+                        <option value="nao">Não</option>
+                        <option value="sim">Sim</option>
+                        <option value="ex">Ex-fumante</option>
+                    </select>
+                </p>
+                 <p>
+                    <label for="etilico">Etílico</label><br>
+                    <select id="etilico" name="etilico">
+                        <option value="nao">Não</option>
+                        <option value="social">Social</option>
+                        <option value="frequente">Frequente</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="qualidade_sono">Qualidade do sono</label><br>
+                    <select id="qualidade_sono" name="qualidade_sono">
+                        <option value="ruim">Ruim</option>
+                        <option value="regular">Regular</option>
+                        <option value="boa">Boa</option>
+                    </select>
+                </p>
+            </section>
+                <h2>Medições</h2>
+                 <p>
+                    <label for="altura">Altura (cm)</label><br>
+                    <input type="number" id="altura" name="altura">
+                </p>
+                <>
+                    <label for="peso">Peso (kg)</label><br>
+                    <input type="number" step="0.1" id="peso" name="peso">
+
+                </p>
+            </section>
+            
+                 <h2>Consentimento</h2>
+                 <p>
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Concordo com o uso dos meus dados*</label>
+                 </p>   
+                 <p>
+                    <label for="assinatura">Assinatura (nome completo)</label><br>
+                    <input type="text" id="assinatura" name="assinatura" required>
+                 </p>
+                 <p>
+                    <label for="data_consentimento">Data</label><br>
+                    <input type="date" id="data_consentimento" name="data_consentimento" required>
+                 </p>
+            </section>
+            
+            <br>
+            <button type="submit">Enviar Ficha</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p style="text-align: center;">
+             2025 - Ficha de Anamnese Digital
+        </p>
+    </footer>
+
+</body>
+
+</html>

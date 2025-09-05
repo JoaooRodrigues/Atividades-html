@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <main>
+        <h2> Dados de Contato</h2>
+              <p>
+                    <label for="nome_completo">Nome completo</label><br>
+                    <input type="text" id="nome_completo" name="nome_completo" required>
+                </p>
+                <p>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email" name="email">
+                </p>
+                <p>
+                    <label for="endereco"> Mensagem </label><br>
+                    <textarea id="endereco" name="endereco" rows="3" style="width: 250px;"></textarea>
+                </p>
+
+                <section>
+                <h2 id="habitos-titulo">Turno de estudo</h2>
+                <p>
+                    <label for="atividade_fisica">Escolha seu turno</label><br>
+                    <select id="atividade_fisica" name="atividade_fisica">
+                        <option value="nenhuma">Nenhuma</option>
+                        <option value="leve">Manhã</option>
+                        <option value="moderada">Tarde</option>
+                        <option value="intensa">Noite</option>
+                    </select>
+
+                     <fieldset>
+                    <legend>Seleção de interesses </legend>
+                    <input type="checkbox" id="Programação" name="interesses" value="Programação">
+                    <label for="hipertensao">Programação</label><br>
+                    <input type="checkbox" id="Programação" name="interesses" value="Programação">
+
+                    <label for="hipertensao">Banco de dados</label><br>
+                    <input type="checkbox" id="Banco de dados" name="interesses" value="Banco de dados">
+
+                    <label for="hipertensao">Redes</label><br>
+                    <input type="checkbox" id="Redes" name="interesses" value="Redes">
+
+                    <label for="hipertensao">Disign</label><br>
+                    <input type="checkbox" id="Disign" name="interesses" value="Designx ">
+
+                      <label for="outras">Outras</label>
+                </fieldset>
+
+                 <fieldset>
+                <legend>Acesso e Documentos</legend>
+                <p>
+                    <label for="senha">Crie uma Senha (mínimo de 6 caracteres):</label><br>
+                    <input type="password" id="senha" name="senha" required minlength="6">
+                </p>
+                <p>
+                    <label for="confirmar_senha">Confirme a Senha:</label><br>
+                    <input type="password"id="confirmar_senha" name="confirmar_senha" required minlength="6">
+                </p>
+                
+                <p>
+                    <label for="curriculo">Envie seu currículo (PDF ou DOC):</label><br>
+                    <input type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx">
+                </p>
+            </fieldset>
+
+            <br>
+            <button type="submit">Enviar Cadastro</button>
+            <button type="reset">Limpar</button>
+
+        </form>
+    </main>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    
+</body>
+</html>
